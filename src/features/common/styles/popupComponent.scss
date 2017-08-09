@@ -1,0 +1,63 @@
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.popupComponentOverlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;	
+
+	.popupComponent {
+		font-size: 18px;
+		font-family: 'Open Sans', sans-serif;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 200px);
+		background: white;
+		width: 1000px;
+		max-width: 100%;
+		opacity: 0;
+		transition: 300ms;
+		padding: 20px;
+		box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+		max-height: 100vh;
+		overflow: auto;
+
+		.fa-times {
+			float: right;
+			padding: 10px;
+			color: #AAA;
+			transition: 300ms;
+
+			&:hover {
+				color: #666;
+				cursor: pointer;
+			}
+		}
+
+		h3 {
+			float: left;
+		}
+
+		img {
+			height: auto;
+		}
+
+		p {
+			display: inline-block;
+		}
+
+		&.ReactModal__Content--after-open {
+			opacity: 1;
+			transform: translate(-50%, 0);
+		}
+
+		@media (min-width: $screen-sm-min) {
+		  top: 100px;
+		  max-height: 80vh;
+		}
+	}
+
+}

@@ -1,0 +1,50 @@
+.blackSeperator {
+	color: white;
+	background: black;
+	padding: 20px;
+
+	h3 {
+		margin: 5px;
+		padding: 10px;
+		margin-left: 20px;
+		float: left;
+	}
+
+	a {
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		float: right;
+		transition: 300ms;
+		display: inline-block;
+		padding: 10px;
+		margin: 5px;
+		border-radius: 5px;
+
+		&:hover {
+			background: white;
+			color: black;
+			cursor: pointer;
+		}
+	}
+
+	.MainMenu {
+		text-align: center;
+		a {
+			float: none;
+		}
+	}
+}
+
+.scrollTop {
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font-size: 30px;
+
+	&:hover {
+		text-decoration: none;
+		color: #666;
+	}
+}
