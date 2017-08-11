@@ -1,7 +1,8 @@
 import React from "react";
+import "../styles/about.scss";
 
 const About1 = () => (
-  <div className="container-fluid" id="onama">
+  <div className="container-fluid">
     <div className="row aboutText first">
       <div className="col-xs-12">
         <p>

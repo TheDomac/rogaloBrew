@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from "react-modal";
-import contents from "data/contents.json"
 import "../styles/popupComponent.scss";
 
 class popupComponent extends Component {
@@ -14,8 +13,7 @@ class popupComponent extends Component {
   }
 
   render() {
-    const blockContent = contents.find(content => content.id === this.props.id);
-    const image = require(`images/${blockContent.backgroundImage}`);
+    const image = require(`images/${this.props.item.backgroundImage}`);
     return (
         <Modal
           isOpen={true}
@@ -25,14 +23,14 @@ class popupComponent extends Component {
           overlayClassName="popupComponentOverlay"
         >
         <div className="clearfix">
-          <h3>{blockContent.content.heading}</h3>
+          <h3>{this.props.item.content.heading}</h3>
           <a onClick={this.closeModal.bind(this)}><i className="fa fa-times" /></a>
         </div>   
           <div className="container-fluid">
             <div className="row">
-              <img className="col-xs-12 col-sm-6 col-md-5" src={image} alt={blockContent.content.heading} />
+              <img className="col-xs-12 col-sm-6 col-md-5" src={image} alt={this.props.item.content.heading} />
               <p className="col-xs-12 col-sm-6 col-md-7">
-                {blockContent.content.description}
+                {this.props.item.content.description}
               </p>
             </div>
           </div>

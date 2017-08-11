@@ -25,7 +25,7 @@ class ImageBlock extends Component {
   }
 
   openModal(id) {
-    this.props.openModal(this.props.photoBlock.id);
+    this.props.openModal(this.props.photoBlock);
   }
 
   render() {

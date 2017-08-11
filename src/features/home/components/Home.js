@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import ImageBlock from "features/common/components/imageBlock";
 import MainMenu from "features/common/components/mainMenu";
 
-import photoBlocks from "data/contents.json"
+import { homeList } from "data/contents.json.js"
 import { withRouter } from "react-router";
 import PopupComponent from "features/common/components/popupComponent";
-/*import About1 from "features/about1";
-import About2 from "features/about2";
+import About1 from "./about1";
+/*import About2 from "features/about2";
 import About3 from "features/about3";*/
 
 class Home extends Component {
@@ -18,7 +18,7 @@ class Home extends Component {
     this.renderPhotoBlock = this.renderPhotoBlock.bind(this);
     this.onScroll = this.onScroll.bind(this);
 
-    this.state = {selectedItemId: null, showScrollTop: false};
+    this.state = {selectedItem: null, showScrollTop: false};
   }
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
@@ -30,8 +30,8 @@ class Home extends Component {
       this.setState({ showScrollTop: true });
     }
   }
-  openModal(selectedItemId) {
-    this.setState({ selectedItemId })
+  openModal(selectedItem) {
+    this.setState({ selectedItem: selectedItem })
   }
   renderPhotoBlock(photoBlock) {
     return (
@@ -43,33 +43,23 @@ class Home extends Component {
     );
   }
   closeModal() {
-    this.setState({ selectedItemId: null });
+    this.setState({ selectedItem: null });
   }
   render() {
     const topButton = this.state.showScrollTop ? 
       <a href="#" className="scrollTop"><i className="fa fa-arrow-up" /></a> : null;
     return (
-      
       <div className="App">
         <MainMenu />  
         <div className="container-fluid">
           <div className="row">
-            {photoBlocks.map(this.renderPhotoBlock)}
+            {homeList.map(this.renderPhotoBlock)}
           </div>
         </div>
-        <div className="container-fluid">
-          <div className="row">
-            {photoBlocks.map(this.renderPhotoBlock)}
-          </div>
-        </div>
-        <div className="container-fluid">
-          <div className="row">
-            {photoBlocks.map(this.renderPhotoBlock)}
-          </div>
-        </div>
+        <About1 />
         {topButton}
-            {this.state.selectedItemId ?
-              <PopupComponent closeModal={this.closeModal} id={this.state.selectedItemId} /> : null}
+            {this.state.selectedItem && this.state.selectedItem.id ?
+              <PopupComponent closeModal={this.closeModal} item={this.state.selectedItem} /> : null}
       </div>
     );
   }

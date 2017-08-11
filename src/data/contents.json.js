@@ -1,7 +1,7 @@
-[
+export const homeList = [
 	{
 		"id": 1,
-		"className": "col-xs-12 col-sm-6 col-md-4",
+		"className": "col-xs-12 col-md-3",
 		"exceptionClassName": "",
 		"backgroundImage": "fermentor50/rb-IMG_5062.jpg",
 		"heading": ["This is not bold but ", "this is"],
@@ -14,7 +14,7 @@
 	},
 	{
 		"id": 2,
-		"className": "col-xs-12 col-sm-6 col-md-4",
+		"className": "col-xs-12 col-md-3",
 		"exceptionClassName": "",
 		"backgroundImage": "fermentor100/rogalo-b-6.jpg",
 		"heading": ["Now this part is bold ", "and this one isn't"],
@@ -27,7 +27,7 @@
 	},
 	{
 		"id": 3,
-		"className": "col-xs-12 col-md-4",
+		"className": "col-xs-12 col-md-3",
 		"exceptionClassName": "",
 		"backgroundImage": "med320/Rogalo-brew-10.jpg",
 		"heading": ["Unbolded part and ", "bolded part"],
@@ -39,21 +39,8 @@
 		}
 	},
 	{
-		"id": 4,
-		"className": "col-xs-12 col-sm-6",
-		"exceptionClassName": "",
-		"backgroundImage": "preskoceneFotke/rogalo-4.jpg",
-		"heading": ["Bolded Part and ", "the unbolded one"],
-		"boldedFirst": true,
-		"subtext": "The fourth subtext, this one is a bit longer",
-		"content": {
-			"heading": "fourth Heading",
-			"description": "Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting. "
-		}
-	},
-	{
 		"id": 5,
-		"className": "col-xs-12 col-sm-6",
+		"className": "col-xs-12 col-md-3",
 		"exceptionClassName": "",
 		"backgroundImage": "ulje100/Rogalo-brew-edit-1.jpg",
 		"heading": ["Bolded Part and ", "another unbolded one"],
@@ -63,5 +50,18 @@
 			"heading": "fifth Heading",
 			"description": "Fat new smallness few supposing suspicion two. Course sir people worthy horses add entire suffer. How one dull get busy dare far. At principle perfectly by sweetness do. As mr started arrival subject by believe. Strictly numerous outlived kindness whatever on we no on addition. "
 		}
-	}
+	}/*,
+	{
+		"id": 4,
+		"className": "col-xs-12 col-md-3",
+		"exceptionClassName": "",
+		"backgroundImage": "preskoceneFotke/rogalo-4.jpg",
+		"heading": ["Bolded Part and ", "the unbolded one"],
+		"boldedFirst": true,
+		"subtext": "The fourth subtext, this one is a bit longer",
+		"content": {
+			"heading": "fourth Heading",
+			"description": "Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting. "
+		}
+	}*/
 ]

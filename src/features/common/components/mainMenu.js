@@ -25,11 +25,11 @@ class MainMenu extends Component {
               </div>
               <div className="col-xs-12 col-sm-6">
                 <div className="MainMenu">
-                  <a href="#onama">O nama</a>
-                  <a href="#pivo">Pivo</a>
-                  <a href="#vino">Vino</a>
-                  <a href="#ulje">Ulje</a>
-                  <a href="#contact">Kontakt</a>
+                  <a href="#">O nama</a>
+                  <a href="#">Pivo</a>
+                  <a href="#">Vino</a>
+                  <a href="#">Ulje</a>
+                  <a href="#">Kontakt</a>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-3">

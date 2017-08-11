@@ -1,6 +1,6 @@
 .blackSeperator {
 	color: white;
-	background: black;
+	background: #333;
 	padding: 20px;
 
 	h3 {
@@ -46,5 +46,6 @@
 	&:hover {
 		text-decoration: none;
 		color: #666;
+		cursor: pointer;
 	}
 }
