@@ -15,7 +15,7 @@ class List extends Component {
       <ImageBlock
         photoBlock={photoBlock}
         key={photoBlock.id}
-        openModal={this.openModal}
+        openModal={this.props.openModal}
       />
     );
   }

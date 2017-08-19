@@ -50,20 +50,28 @@ class Home extends Component {
         <List
           sources={topProductsList}
           message={this.props.intl.formatMessage({ id: "home_about_text" })}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
         />
         <List
           sources={homeBeerList}
           message={this.props.intl.formatMessage({ id: "main_menu_beer" })}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
           showMore="/beer"
         />
         <List
           sources={topProductsList}
           message={this.props.intl.formatMessage({ id: "main_menu_wine" })}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
           showMore="/wine"
         />
         <List
           sources={homeBeerList}
           message={this.props.intl.formatMessage({ id: "main_menu_oil" })}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
           showMore="/oil"
         />
         {topButton}
