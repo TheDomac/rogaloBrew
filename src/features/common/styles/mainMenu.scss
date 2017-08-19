@@ -1,16 +1,16 @@
 .blackSeperator {
 	color: white;
-	background: #333;
-	padding: 20px;
+	padding: 15px;
 
 	h3 {
 		margin: 5px;
 		padding: 10px;
 		margin-left: 20px;
 		float: left;
+		color: white;
 	}
 
-	a {
+	.hoverWhite a {
 		font-size: 20px;
 		color: white;
 		text-decoration: none;
@@ -25,6 +25,7 @@
 			background: white;
 			color: black;
 			cursor: pointer;
+			text-decoration: none;
 		}
 	}
 

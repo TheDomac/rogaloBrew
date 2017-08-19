@@ -1,3 +1,10 @@
 {
-  "test": "ovo je testna poruka"
+  "main_menu_home": "Početna",
+  "main_menu_about_us": "O nama",
+  "main_menu_beer": "Pivo",
+  "main_menu_wine": "Vino",
+  "main_menu_oil": "Ulje",
+  "main_menu_contact": "Kontakt",
+  "home_about_text": "Mi smo hrvatska tvrtka ROGALO d.o.o. i ovdje nudimo dio asortimana inoks prehrambenih spremnika vlastite proizvodnje. Ovo su naši najprodavaniji proizvodi.",
+  "show_more": "Prikaži više..."
 }

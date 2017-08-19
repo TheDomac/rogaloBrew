@@ -1,3 +1,10 @@
 {
-  "test": "this is a test message"
+  "main_menu_home": "Home",
+  "main_menu_about_us": "About Us",
+  "main_menu_beer": "Beer",
+  "main_menu_wine": "Wine",
+  "main_menu_oil": "Oil",
+  "main_menu_contact": "Contact",
+  "home_about_text": "We are croatian company ROGALO d.o.o and we are offering inox NEEDS PROPER TRANSLATION. Below you can find our top products.",
+  "show_more": "Show More..."
 }
