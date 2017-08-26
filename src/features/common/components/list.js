@@ -10,11 +10,11 @@ class List extends Component {
     this.renderPhotoBlock = this.renderPhotoBlock.bind(this);
   }
 
-  renderPhotoBlock(photoBlock) {
+  renderPhotoBlock(photoBlock, i) {
     return (
       <ImageBlock
         photoBlock={photoBlock}
-        key={photoBlock.id}
+        key={i}
         openModal={this.props.openModal}
       />
     );

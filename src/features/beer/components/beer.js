@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import MainMenu from "features/common/components/mainMenu";
 import { injectIntl } from "react-intl";
-import { isEmpty } from "lodash";
-
-
-import topProductsList from "data/topProductsList.json.js"
-import homeBeerList from "data/homeBeerList.json.js"
 
 import PopupComponent from "features/common/components/popupComponent";
 import List from "features/common/components/list";
+import { isEmpty } from "lodash";
+
+import beerList from "data/beerList.json.js";
 
 
-class Home extends Component {
+class Beer extends Component {
   constructor() {
     super();
 
@@ -52,31 +50,10 @@ class Home extends Component {
       <div className="Home">
         <MainMenu />
         <List
-          sources={topProductsList}
-          message={this.props.intl.formatMessage({ id: "home_about_text" })}
+          sources={beerList}
+          message={this.props.intl.formatMessage({ id: "beer_description" })}
           openModal={this.openModal}
           closeModal={this.closeModal}
-        />
-        <List
-          sources={homeBeerList}
-          message={this.props.intl.formatMessage({ id: "main_menu_beer" })}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
-          showMore="/beer"
-        />
-        <List
-          sources={topProductsList}
-          message={this.props.intl.formatMessage({ id: "main_menu_wine" })}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
-          showMore="/wine"
-        />
-        <List
-          sources={homeBeerList}
-          message={this.props.intl.formatMessage({ id: "main_menu_oil" })}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
-          showMore="/oil"
         />
         {topButton}
         {!isEmpty(this.state.selectedItem) ?
@@ -87,4 +64,4 @@ class Home extends Component {
   }
 }
 
-export default injectIntl(Home);
+export default injectIntl(Beer);

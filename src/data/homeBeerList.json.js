@@ -1,6 +1,5 @@
 const beerList = [
   {
-    "id": 2,
     "className": "col-xs-12 col-md-3",
     "exceptionClassName": "",
     "backgroundImage": "fermentor100/rogalo-b-6.jpg",
@@ -13,7 +12,6 @@ const beerList = [
     }
   },
   {
-    "id": 1,
     "className": "col-xs-12 col-md-3",
     "exceptionClassName": "",
     "backgroundImage": "fermentor50/rb-IMG_5062.jpg",
@@ -26,7 +24,6 @@ const beerList = [
     }
   },
   {
-    "id": 5,
     "className": "col-xs-12 col-md-3",
     "exceptionClassName": "",
     "backgroundImage": "ulje100/Rogalo-brew-edit-1.jpg",
@@ -39,7 +36,6 @@ const beerList = [
     }
   },
   {
-    "id": 3,
     "className": "col-xs-12 col-md-3",
     "exceptionClassName": "",
     "backgroundImage": "med320/Rogalo-brew-10.jpg",
